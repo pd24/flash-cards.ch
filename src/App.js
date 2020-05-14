@@ -6,9 +6,6 @@ import {
   BrowserRouter as Router,Link, Route, Switch
 } from "react-router-dom";
 
-
-
-
 class App extends React.Component {
   constructor(props){
     super(props);
