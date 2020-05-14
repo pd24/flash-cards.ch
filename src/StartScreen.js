@@ -7,48 +7,9 @@ import Row from 'react-bootstrap/Row';
 import Button from 'react-bootstrap/Button';
 import Jumbotron from 'react-bootstrap/Jumbotron';
 import Questions from './Questions';
-import Navbar from 'react-bootstrap/Navbar';
-import logo from './logo.png';
+import Header from './Header';
+import Footer from './Footer';
 
-
-class Header extends React.Component{
-    constructor(props){
-        super(props);
-    }
-    render(){
-    return(
-      <Navbar bg="light">
-              <Navbar.Brand>
-                <img
-                  src={logo}
-                  width="30"
-                  height="30"
-                  className="d-inline-block align-top"
-                  alt="University logo"
-                /> {' '}
-                Universität St. Gallen 
-              </Navbar.Brand>   
-            </Navbar>
-    );
-    }
-}
-  
-  class Footer extends React.Component{
-    constructor(props){
-        super(props);
-    }
-    render(){
-        return (
-            <div>
-              <br></br>
-              <Row>
-                <Col sm>© Projektgruppe 84 - FS 20 - Supply Chain Simulation </Col>
-              </Row>
-            </div>
-          );
-    }
-    
-  }
   
   class StartScreen extends React.Component{
     constructor(props){
@@ -78,13 +39,12 @@ class Header extends React.Component{
             <Row>
               <Col>
                 <Jumbotron bg="light">
-                  <h1>Herzlich Willkommen!</h1>
+                  <h1>Welcome!</h1>
                   <p>
-                    Auf dieser Seite findest du ein Quiz zum Thema Supply Chain Simulation, um deinen Lernstand abzufragen sowie dein
-                    Wissen zu festigen.  
+                    On this page you will find a quiz on the subject of Introduction to Programming to help you check your learning level and consolidate your knowledge.
                   </p>
                   <p>
-                    <Button variant="primary" onClick={this.startQuiz}>Quiz starten</Button>
+                    <Button variant="primary" onClick={this.startQuiz}>Start Quiz</Button>
                   </p>
                 </Jumbotron>
               </Col>

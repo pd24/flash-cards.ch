@@ -16,12 +16,9 @@ class App extends React.Component {
   render(){ 
     return(
       <div class="Container">
-          
           <Router>
             <Route exact path="/" component={StartScreen} />
           </Router>
-          
-          
     </div>
     );
   }
