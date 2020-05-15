@@ -38,7 +38,7 @@ class StartScreen extends React.Component{
             <Row>
               <Col>
                 <Jumbotron bg="light">
-                  <h1>Welcome!</h1>
+                  <h1>Welcome !</h1>
                     <p>
                       On this page you will find a quiz on the subject of Introduction to Programming to check your learning progress and strengthen your knowledge.
                     </p>
