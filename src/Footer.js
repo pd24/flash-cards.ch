@@ -13,7 +13,7 @@ class Footer extends React.Component{
             <div>
               <br></br>
               <Row>
-                <Col sm>© Group ID: 2211 - Spring Semester 2020 - Introduction to Programming </Col>
+                <Col sm>© PD - DSF Project</Col>
               </Row>
             </div>
           );
