@@ -40,7 +40,7 @@ class StartScreen extends React.Component{
                 <Jumbotron bg="light">
                   <h1>Welcome !</h1>
                     <p>
-                      <Button variant="primary" onClick={this.startQuiz}>Start Quiz</Button>
+                      <Button variant="primary" onClick={this.startQuiz}>Start learning</Button>
                     </p>
                 </Jumbotron>
               </Col>
