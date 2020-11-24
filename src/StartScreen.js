@@ -13,7 +13,7 @@ import Footer from './Footer';
 class StartScreen extends React.Component{
     constructor(props){
       super(props);
-      this.state = {quizStarted: false};
+      this.state = {quizStarted: false, questions: []};
       this.startQuiz = this.startQuiz.bind(this);
     }
     startQuiz(){
@@ -21,13 +21,21 @@ class StartScreen extends React.Component{
         quizStarted: true
       }));
     }
+
+    componentDidMount() {
+      fetch('http://35.195.189.10/list')
+      .then((response) => response.json())
+      .then(results => {
+          this.setState({ questions: results });
+      });
+    }
   
     render(){
       if(this.state.quizStarted){
         return (
           <Container fluid="md">
             <Header />
-            <Questions />
+            <Questions questions={this.state.questions} />
             <Footer />
           </Container>
         )
@@ -38,7 +46,10 @@ class StartScreen extends React.Component{
             <Row>
               <Col>
                 <Jumbotron bg="light">
-                  <h1>Welcome !</h1>
+                  <h1>Welcome!</h1>
+                  <p>
+                  Your flashcard app.
+                  </p>
                     <p>
                       <Button variant="primary" onClick={this.startQuiz}>Start learning</Button>
                     </p>
