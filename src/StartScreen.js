@@ -23,7 +23,7 @@ class StartScreen extends React.Component{
     }
 
     componentDidMount() {
-      fetch('http://35.195.189.10/list')
+      fetch('https://backend-database.ch/list')
       .then((response) => response.json())
       .then(results => {
           this.setState({ questions: results });
