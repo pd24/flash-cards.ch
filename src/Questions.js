@@ -38,12 +38,11 @@ class Questions extends React.Component {
       super(props);
       this.state = {
         currentQuestionId: 0,
-      questions: props.questions,
-      questionExplanation: props.questions,
-      wronglyAnsweredQuestions:[],
-      correctlyAnsweredQuestions:[],
-      progressInPercent: 0,
-      lastSelectedOption: 0
+        questions: props.questions,
+        wronglyAnsweredQuestions:[],
+        correctlyAnsweredQuestions:[],
+        progressInPercent: 0,
+        lastSelectedOption: 0
     };
       this.incrementCurrentQuestionId = this.incrementCurrentQuestionId.bind(this);
       this.handleAnswer = this.handleAnswer.bind(this);
@@ -135,7 +134,7 @@ class Questions extends React.Component {
           </div>
         );
       }else{
-        var wronglyAnsweredQuestionExplanations = this.state.questionExplanation.map((explanation) => {
+        var wronglyAnsweredQuestionExplanations = this.state.questions.map((explanation) => {
           if(this.state.wronglyAnsweredQuestions.includes(explanation.id)){
             return (
               <div>
