@@ -1,3 +1,41 @@
+## Table of Contents
+1. [General Info](#general-info)
+2. [Technologies](#technologies)
+3. [Installation](#installation)
+4. [Collaboration](#collaboration)
+5. [FAQs](#faqs)
+
+### General Info
+***
+The flash card app was created with the Javascript library React and aims to provide an easy way to learn with flash cards. 
+You can find the deployed web application at https://flash-cards.ch.
+
+### Screenshot
+![Image text](https://i.imgur.com/wgvE1Zk.png)
+
+## Technologies
+***
+A list of technologies used within the project:
+* [Firebase](https://firebase.google.com/) 
+* [React](https://reactjs.org/)
+* [React Router Dom](https://reactrouter.com/)
+
+## Installation
+***
+To run the react app locally, you’ll need to have Node 8.16.0 or Node 10.16.0 or later version and node package manager on your local development machine.
+1. Make sure that node has been installed correctly
+2. Make sure that node package manager has been installed correctly
+3. To install all the dependencies of the application you’ve to run the command in the project directory
+4. To launch the application on your local machine you’ve to run the command
+```
+$ node -v
+$ npm -v
+$ npm install
+$ npm start
+```
+Side information: To use the application in a special environment use ```lorem ipsum``` to start
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
