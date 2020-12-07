@@ -2,8 +2,8 @@
 1. [General Info](#general-info)
 2. [Technologies](#technologies)
 3. [Installation](#installation)
-4. [Collaboration](#collaboration)
-5. [FAQs](#faqs)
+4. [Scripts](#Available Scripts)
+5. [LearnMore](#Learn More)
 
 ### General Info
 ***
@@ -19,6 +19,7 @@ A list of technologies used within the project:
 * [Firebase](https://firebase.google.com/) 
 * [React](https://reactjs.org/)
 * [React Router Dom](https://reactrouter.com/)
+* [React Bootstrap](https://react-bootstrap.github.io/)
 
 ## Installation
 ***
