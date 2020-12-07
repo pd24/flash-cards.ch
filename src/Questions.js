@@ -7,7 +7,10 @@ import ProgressBar from 'react-bootstrap/ProgressBar';
 import Form from 'react-bootstrap/Form';
 import Container from 'react-bootstrap/Container';
 import Fade from 'react-bootstrap/Fade';
-
+import Header from './Header';
+import {
+  BrowserRouter as Link
+} from "react-router-dom";
 
 function WrongAnsweredQuestions(props) {
   const [open, setOpen] = React.useState(false);
@@ -120,7 +123,6 @@ class Questions extends React.Component {
                             name='answer'
                           />
                           </div>
-                          
                           <Button variant="primary" size="lg" value="Weiter" onClick={this.showNextQuestion}>
                             Next Question
                           </Button>{' '}
@@ -134,6 +136,7 @@ class Questions extends React.Component {
           </div>
         );
       }else{
+        
         var wronglyAnsweredQuestionExplanations = this.state.questions.map((explanation) => {
           if(this.state.wronglyAnsweredQuestions.includes(explanation.id)){
             return (
@@ -173,10 +176,6 @@ class Questions extends React.Component {
                           </Row>
                         </Container>
                         <br></br>
-                        <Button href="/" variant="primary" size="sm" block>
-                              New attempt
-                        </Button>
-                            
                         <br></br>
                         <WrongAnsweredQuestions questions={wronglyAnsweredQuestionExplanations} />
                         </Card.Text>

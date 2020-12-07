@@ -7,8 +7,15 @@ import Row from 'react-bootstrap/Row';
 import Button from 'react-bootstrap/Button';
 import Jumbotron from 'react-bootstrap/Jumbotron';
 import Questions from './Questions';
+import Login from './Login';
 import Header from './Header';
 import Footer from './Footer';
+import { Router, Route, Switch } from "react-router";
+import {Navbar,Nav} from 'react-bootstrap';
+import logo from './logo.png';
+import AddQuestions from './AddQuestions';
+
+
 
 class StartScreen extends React.Component{
     constructor(props){
@@ -22,27 +29,32 @@ class StartScreen extends React.Component{
       }));
     }
 
-    componentDidMount() {
-      fetch('https://backend-database.ch/list')
-      .then((response) => response.json())
-      .then(results => {
-          this.setState({ questions: results });
-      });
+    componentDidMount(){
+      //Logging In User
+     if(this.props.firebase.auth().currentUser !== null){
+      var currentUser = this.props.firebase.auth().currentUser;
+      var db = this.props.firebase.database();
+      //var ref = db.ref("https://auth-55ed7-default-rtdb.firebaseio.com/auth-55ed7-default-rtdb/f4MWwLwBQchPRJGd5Z498Hup8yn2")
+        return db.ref('/' + currentUser.uid).once('value').then((snap) => {
+          var data = []
+          snap.forEach(s => {
+            data.push({id: s.val().id,explanation: s.val().explanation, answer: s.val().answer, option1: s.val().option1, option2: s.val().option2, option3: s.val().option3, text: s.val().text})
+          });
+          this.setState({ questions: data });
+        });
+     }
     }
+    
   
     render(){
       if(this.state.quizStarted){
         return (
-          <Container fluid="md">
-            <Header />
             <Questions questions={this.state.questions} />
-            <Footer />
-          </Container>
         )
       }
       return (
-        <Container fluid="md">
-          <Header />
+        <div>
+        
             <Row>
               <Col>
                 <Jumbotron bg="light">
@@ -56,8 +68,7 @@ class StartScreen extends React.Component{
                 </Jumbotron>
               </Col>
             </Row>
-          <Footer />
-        </Container>
+            </div>
       );
     }
   }
