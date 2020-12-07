@@ -87,7 +87,9 @@ class App extends React.Component {
             <Route path="/questions/add" render={(props) => <AddQuestions {...props} firebase={firebase}/>}/>
           </Switch>
         </Router>
+        <Footer />
         </Container>
+        
       </div>
 
     )
