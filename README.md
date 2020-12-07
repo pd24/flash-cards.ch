@@ -9,8 +9,6 @@
 ***
 The flash card app was created with the Javascript library React and aims to provide an easy way to learn with flash cards. 
 You can find the deployed web application at https://flash-cards.ch.
-
-### Screenshot
 ![Image text](https://i.imgur.com/wgvE1Zk.png)
 
 ## Technologies
