@@ -33,8 +33,6 @@ $ npm -v
 $ npm install
 $ npm start
 ```
-Side information: To use the application in a special environment use ```lorem ipsum``` to start
-
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
