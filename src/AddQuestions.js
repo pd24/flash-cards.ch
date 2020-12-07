@@ -40,7 +40,7 @@ class AddQuestions extends React.Component {
       this.props.firebase.database().ref('/' + userUID).once("value")
         .then(snapshot => this.setState({
           numberOfChildren: snapshot.numChildren(),
-          id: snapshot.numChildren() + 1
+          id: snapshot.numChildren()
         }));
     }
 
@@ -48,7 +48,7 @@ class AddQuestions extends React.Component {
       this.props.firebase.database().ref('/' + userUID + '/' + numberOfChildren ).set({
         answer: Number.parseInt(answer,10),
         explanation: explanation,
-        id : numberOfChildren,
+        id : numberOfChildren + 1,
         option1: option1,
         option2: option2,
         option3: option3,
