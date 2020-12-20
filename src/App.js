@@ -25,7 +25,6 @@ import "firebase/database";
 class App extends React.Component {
   constructor(props){
     super(props);
-    /*
     this.firebaseConfig = {
       apiKey: process.env.REACT_APP_API_KEY,
       authDomain: process.env.REACT_APP_AUTHDOMAIN,
@@ -34,15 +33,6 @@ class App extends React.Component {
       storageBucket: process.env.REACT_APP_STORAGEBUCKET,
       messagingSenderId: process.env.REACT_APP_MESSAGING_SENDER_ID,
       appId: process.env.REACT_APP_ID,
-    };*/
-    this.firebaseConfig = {
-      apiKey: "AIzaSyBRmdazVJJ7jGrxz95A8EtsC_2Bb3a-c5Y",
-      authDomain: "auth-55ed7.firebaseapp.com",
-      databaseURL: "https://auth-55ed7-default-rtdb.firebaseio.com/",
-      projectId: "auth-55ed7",
-      storageBucket: "auth-55ed7.appspot.com",
-      messagingSenderId: "844347414766",
-      appId: "1:844347414766:web:d82a223640c1329a2e3bff",
     };
     this.defaultProject = {};
     this.status = "";
