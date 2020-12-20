@@ -13,8 +13,11 @@ You can find the deployed web application at https://flash-cards.ch. Any student
 
 After an account is created, each student can create individual flashcards and start learning right away
 ![Image text](https://i.imgur.com/SgXYY6O.png)
-
 ![Image text](https://i.imgur.com/wgvE1Zk.png)
+After all cards have been learned, the incorrectly answered questions are displayed with the explanations of the respective questions. 
+In addition, the student also can see how many points he has achieved. 
+![Image text](https://i.imgur.com/BRHizIX.png)
+
 
 ## Technologies
 ***
