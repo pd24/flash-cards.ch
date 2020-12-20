@@ -9,10 +9,12 @@
 ***
 The flash card app was created with the Javascript library React and aims to provide an easy way to learn with flash cards. 
 You can find the deployed web application at https://flash-cards.ch. Any student can create a free account. 
-![Image text](https://i.imgur.com/wgvE1Zk.png)
+![Image text](https://i.imgur.com/ofvKhQx.png)
 
 After an account is created, each student can create individual flashcards and start learning right away
 ![Image text](https://i.imgur.com/SgXYY6O.png)
+
+![Image text](https://i.imgur.com/wgvE1Zk.png)
 
 ## Technologies
 ***
