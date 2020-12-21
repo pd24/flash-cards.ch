@@ -22,7 +22,15 @@ In addition, students can see how many points they have achieved.
 A list of technologies used within the project:
 * [Firebase](https://firebase.google.com/) 
 * [React](https://reactjs.org/)
+
+## Used Plugins
+***
+Plugins used for this project
 * [React Router Dom](https://reactrouter.com/)
+
+## UI Component Library
+***
+React-bootstrap was used for the frontend
 * [React Bootstrap](https://react-bootstrap.github.io/)
 
 ## Installation
